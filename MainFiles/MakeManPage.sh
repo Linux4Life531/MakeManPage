@@ -1,3 +1,4 @@
+echo Make sure your script has no file ending
 echo Please enter the name of your script
 read $ScriptName
 
@@ -11,9 +12,19 @@ else
 fi
 
 for i in $wc -l $ScriptName; do
-  Starters =+ (cut -c1,2 "$ScriptName")
+  Starters =+ (cut -c1,3 "$ScriptName")
 done
 
+NewName = ("ScriptName" + ".8")
+
+touch "$NewName"
+
+for b in $wc -l $ScriptName; do
+  for a in 
+
 for t in $wc -l $ScriptName; do
-  if [${Starter[t]} = ""]
+  if [${Starter[t]} = "Hr-"]; then
+    echo (".TH " + ())  
 done
+
+##This is still in the making progress.
