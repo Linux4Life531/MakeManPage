@@ -25,6 +25,14 @@ for b in $wc -l $ScriptName; do
 for t in $wc -l $ScriptName; do
   if [${Starter[t]} = "Hr-"]; then
     echo (".TH " + ())  
+  fi
+  if [${Starter[t]} = "Se-"]; then
+    echo (".SH " + ())
+  fi
+  if [${Starter[t]} = "Te-"]; then
+    echo (())
+  fi
 done
 
-##This is still in the making progress.
+##This is still in the making progress. If you know how to get the rest of the line after the third character please add it to the end of the day.
+
